@@ -1,0 +1,30 @@
+.memberbox{
+	padding: 20px;
+	background-color: $white;
+}
+
+.membername{
+	margin: 5px auto;
+	line-height: 0.95em;
+}
+
+.memberbio {
+	line-height: 1.2em;
+	width: 90%;
+	margin: auto;
+}
+
+img.memberpic{
+	width: 200px;
+	height: 200px;
+	@include border-radius(100px); 
+	border: 2px solid $white;
+}
+
+.memberposition {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.8rem;
+	color: $lightslate;
+	letter-spacing: 1px;
+}

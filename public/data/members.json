@@ -1,0 +1,98 @@
+[
+    {
+    "name": "Samantha Demarco",
+    "position": "President",
+    "major": "Mechanical Engineering",
+    "year": "Senior",
+    "img": "SamanthaDemarco.png",
+    "bio": "Samantha is a senior studying Mechanical Engineering. She enjoys spending time with her cats whom she is allergic to, singing and dancing around her apartment, and watching movie trailers. Her favorite video game series is Spyro."
+    },
+    {
+    "name": "Ashish Aggarwal",
+    "position": "Student Panel Advisor",
+    "major": "Computer Science",
+    "year": "Senior",
+    "img": "AshishAggarwal.png",
+    "bio": "Ashish is a senior studying Computer Science. He loves sleeping, playing soccer and occasionally doing college work. He would do anything if you offer him food from Panda Express."
+    },
+    {
+    "name": "Jake Fava",
+    "position": "Shadow an Engineer Co-Coordinator",
+    "major": "Mechanical Engineering",
+    "year": "Sophomore",
+    "img": "JakeFava.png",
+    "bio": "Jake is a sophomore studying Electrical Engineering with a dual-degree in ILEE. Outside of EIB, he is treasurer for Illinois Solar Decathlon, co-founder and treasurer for the Illini Spikeball Club, and enjoys performing/directing with Illini Student Musicals and singing with the Varsity Men's Glee Club."
+    },
+    {
+    "name": "Geethi Loganathan",
+    "position": "Shadow an Engineer Co-Coordinator",
+    "major": "Mechanical Engineering",
+    "year": "Junior",
+    "img": "GeethiLoganathan.png",
+    "bio": "Geethi is a junior studying Mechanical Engineering. She enjoys rewatching The Office, doing yoga and spending too much money on Thai food."
+    },
+    {
+    "name": "Rohita Mocharla",
+    "position": "Lab Tour Coordinator",
+    "major": "Mechanical Engineering",
+    "year": "Senior",
+    "img": "RohitaMocharla.png",
+    "bio": "Rohita is a senior in Mechanical and Electrical Engineering. In her free time she likes to read, drink coffee, and watch TV."
+    },
+    {
+    "name": "Laura Smearman",
+    "position": "Department Chair",
+    "major": "Civil Engineering",
+    "year": "Junior",
+    "img": "LauraSmearman.png",
+    "bio": "Laura is a junior studying Civil Engineering. She enjoys laying on the quad (when snow isn't covering it), binge watching New Girl, and laughing too hard at memes on Instagram."
+    },
+    {
+    "name": "Matthew Zalewski",
+    "position": "External Outreach Chair",
+    "major": "Mechanical Engineering",
+    "year": "Sophomore",
+    "img": "MatthewZalewski.png",
+    "bio": "Matthew is a sophomore majoring in Mechanical Engineering. When he's not studying or working, he enjoys weightlifting with friends and eating Thai food."
+    },
+    {
+    "name": "Audrey Chou",
+    "position": "Internal Outreach Chair",
+    "major": "Mechanical Engineering",
+    "year": "Senior",
+    "img": "AudreyChou.png",
+    "bio": "Audrey is a senior in Mechanical Engineering. She loves to swim, cook, and eat what she cooks. All the pictures on her phone are of her adorable pet rabbit."
+    },
+    {
+    "name": "Ishaq Umer",
+    "position": "Reservations Chair",
+    "major": "Civil Engineering",
+    "year": "Junior",
+    "img": "IshaqUmer.png",
+    "bio": "Ishaq is a junior studying Civil Engineering. In his free time he loves to eat food, watch movies and play basketball."
+    },
+    {
+    "name": "Lynsey Howse",
+    "position": "Engineering Campus Tours Coordinator",
+    "major": "General Engineering",
+    "year": "Senior",
+    "img": "LynseyHowse.png",
+    "bio": "Lynsey is a senior in General Engineering with a specialization in business systems integration. In her spare time she enjoys long runs through the corn fields, spicy Thai food, and trying to pet every puppy on the quad."
+    },  
+	{
+    "name": "Maggie Smith",
+    "position": "Webmaster",
+    "major": "Computer Science",
+    "year": "Senior",
+    "img": "MaggieSmith.png",
+    "bio": "Maggie is a senior majoring in Computer Science and minoring in Spanish. A perfect day for her would include listening to music, running, thrift shopping, petting lots of dogs, and sleeping."
+	},
+    {
+    "name": "Steve Jarva",
+    "position": "Society Interaction Committee Representative",
+    "major": "Mechanical Engineering",
+    "year": "Senior",
+    "img": "SteveJarva.png",
+    "bio": "Steve is in his super senior year studying Mechanical Engineering. He enjoys peaceful walks by the bay, sunsets, and flowery meadows. When you see him on campus be sure to tell him to \"Shake n Bake.\""
+    }
+]

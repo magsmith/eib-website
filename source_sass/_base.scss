@@ -1,0 +1,147 @@
+body {
+	color: $bodyfontcolor;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: $navheight;
+}
+
+main {
+	text-align: left;
+	width: 80%;
+	margin: auto;
+	@include breakpoint(small down){
+		width: 100%;
+	}
+}
+
+// For sections within a page
+section {
+	margin: 20px;
+}
+
+table {
+	margin: auto;
+	width: 80%;
+	@include breakpoint(medium down){
+		width: 100%;
+	}
+}
+
+nav { 
+	background-color: $lightslate;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $navheight; 
+	width: 100%;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	//font-weight: bold;
+	//text-transform: uppercase;
+
+	a, a:visited, a:active {
+		display: inline-block;
+		color: $white;
+	}
+	a:hover{
+		color: $orange;
+		border-bottom: 1px solid $white;
+	}
+
+	img {
+		height: 30px;
+	}
+
+	ul {
+		list-style-type: none;
+		//width: 100%;
+		//overflow: hidden;
+		margin: 5px auto;	//5px top & bottom
+
+		li {
+			float: right;
+			display: inline-block;
+			margin: 0px 20px;	//20px between each
+
+			.logo {
+				float: left;
+			}
+		}
+	}
+}
+
+ul {
+	width: 80%;
+	margin: 10px auto;
+	list-style-type: square;
+
+	@include breakpoint(small down){
+		width: 100%;
+	}
+}
+
+footer {
+	font-size: 0.9rem;
+	background-color: $orange;
+	width:100%;
+	text-align: center;
+	margin-top: $navheight;
+	padding: 20px;
+	a {
+		color: $bodyfontcolor;
+	}
+}
+
+#footermain {
+	margin: auto;
+	overflow: hidden;
+	width: 400px;
+	@include breakpoint(small down){
+		width: 100%;
+	}
+	@include breakpoint(medium down){
+		width: 80%;
+	}
+}
+
+.rightbox {
+	float: right;
+	text-align: left;
+}
+
+.leftbox {
+	float: left;
+	text-align: right;
+}
+
+p {
+	width: 90%;
+	margin: 20px auto;
+}
+
+h1 {	// EIB title
+	font-size: 3rem;
+	color: $titlecolor;
+	text-align: center;
+}
+
+h2 {	// Section title
+	font-size: 2rem;
+	line-height: 100%;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {	// Other subtitles
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 100%;
+}
+
+a, a:visited, a:hover, a:active {
+	color: $blue;
+}
+a:hover{
+	color: $lightblue;
+	border-bottom: 1px solid $black;
+}

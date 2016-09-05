@@ -1,0 +1,19 @@
+<div ng-controller="meetController">
+
+	<h2>Meet the Committee</h2>
+
+	<div class="row small-up-1 medium-up-2 large-up-3">
+		<div class="column memberbox" ng-repeat="member in members">
+			<img ng-src="./data/images/committee/{{member.img}}" class="memberpic"/><br>
+			<div class="membername">
+				<b>{{member.name}}</b><br>
+				<span class="memberposition">{{member.position}}</span>
+			</div>
+			<div class="memberbio">
+				{{member.bio}}
+			</div>
+		</div>
+	</div>
+
+
+</div>
