@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>EIB | Engineering Information Bureau at UIUC</title>
+    <title>EIB @UIUC | Engineering Information Bureau</title>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./foundation6_lib/css/foundation.css">
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Angular Scripts -->
@@ -19,13 +20,11 @@
 <body ng-app="mp3">
 
     <nav>
-        <ul>
-        <li class="logo"><img src="./data/images/logos/eib_logo.png"></li>
-        <li><a href="#/meet">Meet the Committee</a></li>
-        <li><a href="#/tours">Engineering Tours</a></li>
-        <li><a href="#/edays">Engineering Days</a></li>
-        <li><a href="#/advocates">Engineering Advocates</a></li>
-        <li><a href="#/shadow">Shadow an Engineer</a></li>
+        <ul id="navlist">
+            <li class="logo"><a href="#/home">EIB @UIUC</a></li>
+            <li><a href="#/home#meet"><span class="noshowsmall">Our</span> Committee</a></li>
+            <li><a href="#/home#programs"><span class="noshowsmall">Our</span> Programs</a></li>
+            <li><a href="#/home#about">About <span class="noshowsmall">Us</span></a></li>
         </ul>
     </nav>
 
@@ -34,20 +33,22 @@
     <div ng-view></div>
 
     <footer>
-        <div id="footermain">
+        <div id="footermain" class="row small-centered expanded small-up-1 medium-up-2 large-up-2">
 
-            <b>Engineering Information Bureau</b>
-            <br>
-            <div class="leftbox">
+            <div class="column leftbox">
+                <h4>Location</h4>
                 103C Engineering Hall<br>
                 1308 W Green St<br>
-                Urbana, Illinois 61801<br>
+                Urbana, IL 61801<br>
             </div>
 
-            <div class="rightbox">
-                <i class="fa fa-phone" aria-hidden="true"></i> Phone: <a href="tel:1-217-244-3828">(217) 244-3828</a> <br>
-                <i class="fa fa-fax" aria-hidden="true"></i> Fax: (217) 244-4974 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> Email: eib@ec.illinois.edu
+            <div class="column rightbox">
+                <h4>Contact</h4>
+                217.244.3828
+                <span class="phoneid"><a href="http://ec.illinois.edu/">Engineering Council</a></span><br>
+                217.333.2151
+                <span class="phoneid"><a href="http://engineering.illinois.edu/">College of Engineering</a></span><br>
+                eib@ec.illinois.edu
             </div>
 
         </div>

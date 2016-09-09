@@ -16,8 +16,9 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@import "https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700";
 /* line 219, ../foundation6_lib/scss/global/_global.scss */
 html {
   font-family: sans-serif;
@@ -4164,164 +4165,296 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 1, ../../source_sass/_base.scss */
 body {
-  color: #000000;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 40px; }
+  background-color: #FFFFFF; }
 
-/* line 8, ../../source_sass/_base.scss */
+/* line 7, ../../source_sass/_base.scss */
 main {
+  padding: 20px 0px;
   text-align: left;
   width: 80%;
-  margin: auto; }
-  @media screen and (max-width: 39.9375em) {
-    /* line 8, ../../source_sass/_base.scss */
+  margin: 0px auto;
+  margin-bottom: 48px; }
+  @media screen and (max-width: 63.9375em) {
+    /* line 7, ../../source_sass/_base.scss */
     main {
+      width: 100%;
+      padding: 10px; } }
+
+/* line 19, ../../source_sass/_base.scss */
+.centeredbox {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 22, ../../source_sass/_base.scss */
+.nopadding {
+  padding: 0px; }
+
+/* line 25, ../../source_sass/_base.scss */
+.redtext {
+  color: #ff5252; }
+
+/* line 29, ../../source_sass/_base.scss */
+.homepage {
+  position: relative;
+  top: -48px;
+  margin: 0px; }
+
+/* line 35, ../../source_sass/_base.scss */
+hr {
+  width: 80%; }
+
+/* line 39, ../../source_sass/_base.scss */
+header {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px auto;
+  padding-top: 0px;
+  background: url("../data/images/uiuc/grainger.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  /* line 47, ../../source_sass/_base.scss */
+  header h1 {
+    font-size: 5rem;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold; }
+    @media screen and (max-width: 39.9375em) {
+      /* line 47, ../../source_sass/_base.scss */
+      header h1 {
+        font-size: 3rem; } }
+  /* line 57, ../../source_sass/_base.scss */
+  header h2 {
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-transform: none; }
+    @media screen and (max-width: 39.9375em) {
+      /* line 57, ../../source_sass/_base.scss */
+      header h2 {
+        font-size: 1.6rem; } }
+
+/* line 67, ../../source_sass/_base.scss */
+.divheader {
+  height: 100vh;
+  margin: 0px auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+  /* line 71, ../../source_sass/_base.scss */
+  .divheader hr {
+    width: 60%; }
+
+/* line 76, ../../source_sass/_base.scss */
+.anchor {
+  display: block;
+  height: 48px;
+  /*same height as nav*/
+  margin-top: -48px;
+  /*same height as nav*/
+  visibility: hidden; }
+
+/* line 83, ../../source_sass/_base.scss */
+.about {
+  margin: auto;
+  width: 60%; }
+  @media screen and (max-width: 63.9375em) {
+    /* line 83, ../../source_sass/_base.scss */
+    .about {
+      width: 80%; } }
+  @media screen and (max-width: 39.9375em) {
+    /* line 83, ../../source_sass/_base.scss */
+    .about {
       width: 100%; } }
 
-/* line 18, ../../source_sass/_base.scss */
+/* line 94, ../../source_sass/_base.scss */
+.programs {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #FFFFFF; }
+  /* line 98, ../../source_sass/_base.scss */
+  .programs h2 {
+    color: #FFFFFF; }
+  /* line 101, ../../source_sass/_base.scss */
+  .programs h1 {
+    text-transform: none;
+    font-weight: normal; }
+
+/* line 106, ../../source_sass/_base.scss */
+.programbox {
+  font-weight: normal;
+  padding: 50px 100px;
+  color: #000000; }
+  @media screen and (max-width: 63.9375em) {
+    /* line 106, ../../source_sass/_base.scss */
+    .programbox {
+      padding: 50px 10px; } }
+  /* line 113, ../../source_sass/_base.scss */
+  .programbox:hover {
+    font-weight: normal;
+    color: #000000;
+    opacity: 0.8; }
+    /* line 117, ../../source_sass/_base.scss */
+    .programbox:hover h4 {
+      color: #224067; }
+
+/* line 123, ../../source_sass/_base.scss */
+.navy1 {
+  background-color: rgba(34, 64, 103, 0.05); }
+
+/* line 126, ../../source_sass/_base.scss */
+.navy2 {
+  background-color: rgba(34, 64, 103, 0.075); }
+
+/* line 130, ../../source_sass/_base.scss */
+.divmeet {
+  background-color: #FFFFFF;
+  padding: 60px 0px; }
+  /* line 133, ../../source_sass/_base.scss */
+  .divmeet h1 {
+    text-transform: none;
+    font-weight: normal; }
+
+/* line 139, ../../source_sass/_base.scss */
+ul {
+  width: 80%;
+  margin: auto; }
+
+/* line 145, ../../source_sass/_base.scss */
 section {
   margin: 20px; }
 
-/* line 22, ../../source_sass/_base.scss */
+/* line 149, ../../source_sass/_base.scss */
 table {
-  margin: auto;
-  width: 80%; }
-  @media screen and (max-width: 63.9375em) {
-    /* line 22, ../../source_sass/_base.scss */
-    table {
-      width: 100%; } }
+  margin: auto; }
 
-/* line 30, ../../source_sass/_base.scss */
-nav {
-  background-color: #8585b9;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif; }
-  /* line 42, ../../source_sass/_base.scss */
-  nav a, nav a:visited, nav a:active {
-    display: inline-block;
-    color: #FFFFFF; }
-  /* line 46, ../../source_sass/_base.scss */
-  nav a:hover {
-    color: #f09d24;
-    border-bottom: 1px solid #FFFFFF; }
-  /* line 51, ../../source_sass/_base.scss */
-  nav img {
-    height: 30px; }
-  /* line 55, ../../source_sass/_base.scss */
-  nav ul {
-    list-style-type: none;
-    margin: 5px auto; }
-    /* line 61, ../../source_sass/_base.scss */
-    nav ul li {
-      float: right;
-      display: inline-block;
-      margin: 0px 20px; }
-      /* line 66, ../../source_sass/_base.scss */
-      nav ul li .logo {
-        float: left; }
-
-/* line 73, ../../source_sass/_base.scss */
-ul {
-  width: 80%;
-  margin: 10px auto;
-  list-style-type: square; }
-  @media screen and (max-width: 39.9375em) {
-    /* line 73, ../../source_sass/_base.scss */
-    ul {
-      width: 100%; } }
-
-/* line 83, ../../source_sass/_base.scss */
+/* line 153, ../../source_sass/_base.scss */
 footer {
+  font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
-  background-color: #f09d24;
+  background-color: #224067;
   width: 100%;
   text-align: center;
-  margin-top: 40px;
-  padding: 20px; }
-  /* line 90, ../../source_sass/_base.scss */
-  footer a {
-    color: #000000; }
+  margin: 0px;
+  padding: 20px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 48px; }
+  /* line 166, ../../source_sass/_base.scss */
+  footer #footermain {
+    margin: 0px auto;
+    overflow: hidden;
+    width: 700px; }
+    @media screen and (max-width: 39.9375em) {
+      /* line 166, ../../source_sass/_base.scss */
+      footer #footermain {
+        width: 100%; } }
+    /* line 173, ../../source_sass/_base.scss */
+    footer #footermain .phoneid a {
+      font-weight: normal;
+      color: #ff5252; }
+      /* line 176, ../../source_sass/_base.scss */
+      footer #footermain .phoneid a:hover {
+        color: #FFFFFF; }
+    /* line 181, ../../source_sass/_base.scss */
+    footer #footermain h4 {
+      color: #ff5252; }
 
-/* line 95, ../../source_sass/_base.scss */
-#footermain {
-  margin: auto;
-  overflow: hidden;
-  width: 400px; }
-  @media screen and (max-width: 39.9375em) {
-    /* line 95, ../../source_sass/_base.scss */
-    #footermain {
-      width: 100%; } }
-  @media screen and (max-width: 63.9375em) {
-    /* line 95, ../../source_sass/_base.scss */
-    #footermain {
-      width: 80%; } }
+/* line 187, ../../source_sass/_base.scss */
+.rightbox, .leftbox {
+  text-align: left;
+  padding-bottom: 10px; }
 
-/* line 107, ../../source_sass/_base.scss */
-.rightbox {
-  float: right;
-  text-align: left; }
-
-/* line 112, ../../source_sass/_base.scss */
-.leftbox {
-  float: left;
-  text-align: right; }
-
-/* line 117, ../../source_sass/_base.scss */
+/* line 193, ../../source_sass/_base.scss */
 p {
   width: 90%;
   margin: 20px auto; }
 
-/* line 122, ../../source_sass/_base.scss */
+/* line 198, ../../source_sass/_base.scss */
 h1 {
   font-size: 3rem;
   color: #000000;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px; }
 
-/* line 128, ../../source_sass/_base.scss */
+/* line 208, ../../source_sass/_base.scss */
 h2 {
-  font-size: 2rem;
+  color: #224067;
+  font-size: 2.5rem;
   line-height: 100%;
-  font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 10px;
+  font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 135, ../../source_sass/_base.scss */
+/* line 219, ../../source_sass/_base.scss */
 h3 {
+  color: #ff5252;
   font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 100%; }
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 141, ../../source_sass/_base.scss */
-a, a:visited, a:hover, a:active {
-  color: #6495ED; }
+/* line 229, ../../source_sass/_base.scss */
+h4 {
+  color: #ff5252;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 144, ../../source_sass/_base.scss */
+/* line 239, ../../source_sass/_base.scss */
+a, a:visited, a:active {
+  transition: 0.2s;
+  color: #ff5252;
+  font-weight: normal; }
+  /* line 243, ../../source_sass/_base.scss */
+  a .programbox, a:visited .programbox, a:active .programbox {
+    transition: 0.2s; }
+
+/* line 247, ../../source_sass/_base.scss */
 a:hover {
-  color: #92d0f9;
-  border-bottom: 1px solid #000000; }
+  font-weight: normal;
+  color: #224067; }
 
 /* line 1, ../../source_sass/_meet.scss */
 .memberbox {
   padding: 20px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  text-align: center; }
 
-/* line 6, ../../source_sass/_meet.scss */
-.membername {
+/* line 7, ../../source_sass/_meet.scss */
+.namebox {
+  letter-spacing: 1px;
   margin: 5px auto;
-  line-height: 0.95em; }
+  line-height: 1em;
+  font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 11, ../../source_sass/_meet.scss */
+/* line 14, ../../source_sass/_meet.scss */
+.membername {
+  font-size: 1.3rem; }
+
+/* line 18, ../../source_sass/_meet.scss */
+.memberposition {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #ff5252;
+  letter-spacing: 1px;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+/* line 27, ../../source_sass/_meet.scss */
 .memberbio {
   line-height: 1.2em;
-  width: 90%;
+  width: 85%;
   margin: auto; }
 
-/* line 17, ../../source_sass/_meet.scss */
+/* line 33, ../../source_sass/_meet.scss */
 img.memberpic {
   width: 200px;
   height: 200px;
@@ -4332,13 +4465,68 @@ img.memberpic {
   border-radius: 100px;
   border: 2px solid #FFFFFF; }
 
-/* line 24, ../../source_sass/_meet.scss */
-.memberposition {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.8rem;
-  color: #8585b9;
-  letter-spacing: 1px; }
+/* line 1, ../../source_sass/_nav.scss */
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase; }
+  @media screen and (max-width: 39.9375em) {
+    /* line 1, ../../source_sass/_nav.scss */
+    nav {
+      font-size: 0.8rem; } }
+  /* line 16, ../../source_sass/_nav.scss */
+  nav img {
+    height: 30px; }
+  /* line 20, ../../source_sass/_nav.scss */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(34, 64, 103, 0.8); }
+    /* line 28, ../../source_sass/_nav.scss */
+    nav ul li {
+      vertical-align: middle;
+      float: right;
+      display: inline-block;
+      padding: 10px 20px;
+      letter-spacing: 1px; }
+      @media screen and (max-width: 39.9375em) {
+        /* line 28, ../../source_sass/_nav.scss */
+        nav ul li {
+          padding: 7px;
+          letter-spacing: 0px; } }
+      /* line 39, ../../source_sass/_nav.scss */
+      nav ul li a, nav ul li a:visited, nav ul li a:active {
+        display: inline-block;
+        color: #FFFFFF;
+        transition: 0.2s;
+        font-weight: bold; }
+      /* line 46, ../../source_sass/_nav.scss */
+      nav ul li a:hover {
+        color: #ff5252;
+        border-bottom: 0px;
+        font-weight: bold; }
+      @media screen and (max-width: 39.9375em) {
+        /* line 52, ../../source_sass/_nav.scss */
+        nav ul li .noshowsmall {
+          display: none; } }
+      /* line 59, ../../source_sass/_nav.scss */
+      nav ul li.logo {
+        float: left;
+        font-size: 1.5rem;
+        padding: 5px 20px; }
+        @media screen and (max-width: 39.9375em) {
+          /* line 59, ../../source_sass/_nav.scss */
+          nav ul li.logo {
+            font-size: 1rem; } }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles

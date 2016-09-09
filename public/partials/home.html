@@ -1,5 +1,97 @@
-<div ng-controller="homeController">
+<div ng-controller="meetController">
 
-	<h1>Engineering Information Bureau</h1>
+	<div class="homepage">
+
+		<header>
+			<div class="divheader">
+				<div class="centeredbox">
+					<h1><span class="redtext">Engineering</span> Information Bureau</h1>
+					<hr>
+					<h2>University of Illinois at Urbana-Champaign</h2>
+				</div>
+			</div>
+		</header>
+
+		<span class="anchor" id="about"></span>
+		<div class="row expanded align-middle programs">
+			<div class="column nopadding">
+				<h1><span class="redtext">About</span> Us</h1>
+				<div class="about">
+					<p>The Engineering Information Bureau is one of 15 committees in Engineering Council. Our programs are developed and implemented entirely by current engineering students and are designed to inform interested individuals and groups, most often prospective students and their parents.</p>
+				</div>
+			</div>
+		</div>
+		</a>
+
+	
+
+		<span class="anchor" id="programs"></span>
+		<div class="row expanded align-middle programs">
+			<div class="column nopadding">
+				<h1><span class="redtext">Our</span> Programs</h1>
+				<br>
+
+				<div class="row expanded align-middle small-up-1 medium-up-1 large-up-1" data-equalizer>
+
+					<a href="#/edays">
+					<div class="column programbox navy2" data-equalizer-watch>
+						<h4>Engineering Days</h4>
+						<div class="about">
+							Open to anyone, Engineering Days are intended to introduce high school students to the many engineering curriculums offered at the University of Illinois. Students will visit research labs, chat with engineering students, and much more.
+						</div>
+					</div>
+					</a>
+
+					<a href="#/shadow">
+					<div class="column programbox navy1" data-equalizer-watch>
+						<h4>Shadow an Engineer</h4>
+						<div class="about">
+							Shadow an Engineer allows visiting students to spend a day with a current UIUC engineering student and experience campus life firsthand. Visiting students will sit in on lectures, see residence halls and facilities, and most importantly, get time to talk to current students about their experiences.
+						</div>
+					</div>
+					</a>
+
+					<a href="#/tours">
+					<div class="column programbox navy2" data-equalizer-watch>
+						<h4>Engineering Campus Tours</h4>
+						<div class="about">
+							Provided every weekday by current undergraduate engineering students, these tours showcase our engineering campus and give prospective students and their parents a chance to learn about the opportunities our engineering departments have to offer.
+						</div>
+					</div>
+					</a>
+
+					<a href="#/advocates">
+					<div class="column programbox navy1" data-equalizer-watch>
+						<h4>Engineering Advocates</h4>
+						<div class="about">
+							Engineering Advocates is a dynamic engineering education outreach program for students in elementary, middle, and high school. The program involves current UIUC engineering students visiting various high schools and promoting STEM fields.
+						</div>
+					</div>
+					</a>
+
+				</div>
+			</div>
+		</div>
+
+
+		<span class="anchor" id="meet"></span>
+		<div class="divmeet">
+			<h1><span class="redtext">Meet</span> the Committee</h1>
+			<div class="row expanded small-up-1 medium-up-2 large-up-3">
+				<div class="column memberbox" ng-repeat="member in members">
+					<img ng-src="./data/images/committee/{{member.img}}" class="memberpic"/><br>
+					<div class="namebox">
+						<span class="membername">{{member.name}}</span><br>
+						<span class="memberposition">{{member.position}}</span>
+					</div>
+					<div class="memberbio">
+						{{member.bio}}
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
 
 </div>

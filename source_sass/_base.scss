@@ -1,17 +1,144 @@
 body {
-	color: $bodyfontcolor;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	margin-top: $navheight;
+	background-color: $white;
 }
 
 main {
+	padding: 20px 0px;
 	text-align: left;
 	width: 80%;
+	margin: 0px auto;
+	margin-bottom: $navtotalheight;
+	@include breakpoint(medium down){
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+.centeredbox {
+	@include vertically-center();
+}
+.nopadding {
+	padding: 0px;
+}
+.redtext {
+	color: $red;
+}
+
+.homepage {
+	position: relative;
+	top: -$navtotalheight;
+	margin: 0px;
+}
+
+hr {
+	width: 80%;
+}
+
+header {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px auto;
+	padding-top: 0px;
+	background: url('../data/images/uiuc/grainger.jpg') no-repeat center center fixed;
+	background-size: cover;
+
+	h1 {
+		font-size: 5rem;
+		color: $white;
+		text-align: center;
+		font-weight: bold;
+		@include breakpoint(small down){
+			font-size: 3rem;
+		}
+	}
+
+	h2 {
+		letter-spacing: 1px;
+		color: $white;
+		font-size: 2rem;
+		text-transform: none;
+		@include breakpoint(small down){
+			font-size: 1.6rem;
+		}
+	}
+}
+.divheader {
+	height: 100vh;
+	margin: 0px auto;
+	background-color: $blackA4;
+	hr {
+		width: 60%;
+	}
+}
+
+.anchor{
+  display: block;
+  height: $navtotalheight; /*same height as nav*/
+  margin-top: -$navtotalheight; /*same height as nav*/
+  visibility: hidden;
+}
+
+.about {
 	margin: auto;
+	width: 60%;
+	@include breakpoint(medium down){
+		width: 80%;
+	}
 	@include breakpoint(small down){
 		width: 100%;
 	}
+}
+
+.programs {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $white;
+	h2 {
+		color: $white;
+	}
+	h1 {
+		text-transform: none;
+		font-weight: normal;
+	}
+}
+.programbox {
+	font-weight: normal;
+	padding: 50px 100px;
+	color: $black;
+	@include breakpoint(medium down){
+		padding: 50px 10px;
+	}
+	&:hover {
+		font-weight: normal;
+		color: $black;
+		opacity: 0.8;
+		h4 {
+			color: $navy;
+		}
+	}
+}
+
+.navy1 {
+	background-color: $navyA05;
+}
+.navy2 {
+	background-color: $navyA075;
+}
+
+.divmeet {
+	background-color: $white;
+	padding: 60px 0px;
+	h1 {
+		text-transform: none;
+		font-weight: normal;
+	}
+}
+
+ul {
+	width: 80%;
+	margin: auto;
 }
 
 // For sections within a page
@@ -21,98 +148,47 @@ section {
 
 table {
 	margin: auto;
-	width: 80%;
-	@include breakpoint(medium down){
-		width: 100%;
-	}
 }
 
-nav { 
-	background-color: $lightslate;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: $navheight; 
-	width: 100%;
-	text-align: left;
-	font-family: 'Open Sans', sans-serif;
-	//font-weight: bold;
-	//text-transform: uppercase;
+footer {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+	background-color: $navy;
+	width:100%;
+	text-align: center;
+	margin: 0px;
+	padding: 20px;
+	color: $white;
+	letter-spacing: 1px;
+	position: relative;
+	bottom: $navtotalheight;
 
-	a, a:visited, a:active {
-		display: inline-block;
-		color: $white;
-	}
-	a:hover{
-		color: $orange;
-		border-bottom: 1px solid $white;
-	}
-
-	img {
-		height: 30px;
-	}
-
-	ul {
-		list-style-type: none;
-		//width: 100%;
-		//overflow: hidden;
-		margin: 5px auto;	//5px top & bottom
-
-		li {
-			float: right;
-			display: inline-block;
-			margin: 0px 20px;	//20px between each
-
-			.logo {
-				float: left;
+	#footermain {
+		margin: 0px auto;
+		overflow: hidden;
+		width: 700px;
+		@include breakpoint(small down){
+			width: 100%;
+		}
+		.phoneid a {
+			font-weight: normal;
+			color: $red;
+			&:hover {
+				color: $white;
 			}
+		}
+
+		h4 {
+			color: $red;
 		}
 	}
 }
 
-ul {
-	width: 80%;
-	margin: 10px auto;
-	list-style-type: square;
-
-	@include breakpoint(small down){
-		width: 100%;
-	}
-}
-
-footer {
-	font-size: 0.9rem;
-	background-color: $orange;
-	width:100%;
-	text-align: center;
-	margin-top: $navheight;
-	padding: 20px;
-	a {
-		color: $bodyfontcolor;
-	}
-}
-
-#footermain {
-	margin: auto;
-	overflow: hidden;
-	width: 400px;
-	@include breakpoint(small down){
-		width: 100%;
-	}
-	@include breakpoint(medium down){
-		width: 80%;
-	}
-}
-
-.rightbox {
-	float: right;
+.rightbox, .leftbox {
 	text-align: left;
+	padding-bottom: 10px;
 }
 
-.leftbox {
-	float: left;
-	text-align: right;
-}
 
 p {
 	width: 90%;
@@ -123,25 +199,52 @@ h1 {	// EIB title
 	font-size: 3rem;
 	color: $titlecolor;
 	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 h2 {	// Section title
-	font-size: 2rem;
+	color: $navy;
+	font-size: 2.5rem;
 	line-height: 100%;
-	font-weight: bold;
 	text-align: center;
+	letter-spacing: 2px;
+	margin: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	//text-transform: uppercase;
 }
 
 h3 {	// Other subtitles
+	color: $red;
 	font-size: 1.5rem;
-	font-weight: bold;
+	letter-spacing: 1px;
+	//font-weight: bold;
 	line-height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	//text-transform: uppercase;
 }
 
-a, a:visited, a:hover, a:active {
-	color: $blue;
+h4 {
+	color: $red;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	line-height: 1.5rem;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+a, a:visited, a:active {
+	transition: 0.2s;
+	color: $red;
+	font-weight: normal;
+	.programbox {
+		transition: 0.2s;
+	}
 }
 a:hover{
-	color: $lightblue;
-	border-bottom: 1px solid $black;
+	font-weight: normal;
+	color: $navy;
 }

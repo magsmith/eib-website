@@ -1,16 +1,32 @@
 .memberbox{
 	padding: 20px;
 	background-color: $white;
+	text-align: center;
 }
 
-.membername{
+.namebox{
+	letter-spacing: 1px;
 	margin: 5px auto;
-	line-height: 0.95em;
+	line-height: 1em;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.membername {
+	font-size: 1.3rem;
+}
+
+.memberposition {
+	text-transform: uppercase;
+	//font-weight: bold;
+	font-size: 0.9rem;
+	color: $red;
+	letter-spacing: 1px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .memberbio {
 	line-height: 1.2em;
-	width: 90%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -19,12 +35,4 @@ img.memberpic{
 	height: 200px;
 	@include border-radius(100px); 
 	border: 2px solid $white;
-}
-
-.memberposition {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 0.8rem;
-	color: $lightslate;
-	letter-spacing: 1px;
 }

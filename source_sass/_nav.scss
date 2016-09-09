@@ -1,0 +1,72 @@
+nav { 
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $navheight; 
+	width: 100%;
+	text-align: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+
+	@include breakpoint(small down){
+		font-size: 0.8rem;	
+	}
+
+	img {
+		height: 30px;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		overflow: hidden;
+		background-color: $navyA8;
+
+		li {
+			vertical-align: middle;
+			float: right;
+			display: inline-block;
+			padding: 10px 20px;	//20px between each
+			@include breakpoint(small down){
+				padding: 7px;	//10px between each
+				letter-spacing: 0px;
+			}
+			letter-spacing: 1px;
+
+			a, a:visited, a:active {
+				display: inline-block;
+				color: $white;
+				transition: 0.2s;
+				font-weight: bold;
+			}
+
+			a:hover {
+				color: $red;
+				border-bottom: 0px;
+				font-weight: bold;
+			}			
+
+			.noshowsmall {
+				@include breakpoint(small down){
+					display:none;
+				}
+			}
+
+			// EIB @UIUC
+			&.logo {
+				float: left;
+				font-size: 1.5rem;
+				padding: 5px 20px;
+				@include breakpoint(small down){
+					font-size: 1rem;	
+				}
+			}
+			
+		}
+
+
+	}
+}

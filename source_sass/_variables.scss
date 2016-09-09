@@ -1,5 +1,3 @@
-// Insert your variables
-
 $titlecolor		: #000000;
 $genreBG		: #C1C1C1;
 $detailBG		: #C1C1C1;
@@ -7,16 +5,42 @@ $detailBG		: #C1C1C1;
 $bodyfontcolor	: #000000;
 
 $navheight		: 40px;
+$navtotalheight : 48px;
 $footerheight	: 100px;
 
 $orange			: #f09d24;
 $blue			: #6495ED;
 $lightblue		: #92d0f9;
 $lightgray		: #D3D3D3;
-$black			: #000000;
+$lightestgray	: #f8f8f8;
 $white			: #FFFFFF;
 $dodgerblue		: #2199e8;
 $wetasphalt		: rgba(52, 73, 94, 1.0);
 $wetasphaltA5	: rgba(52, 73, 94, 0.5);
 $midnightblue	: rgba(44, 62, 80, 1.0);
 $lightslate		: #8585b9;
+
+$black			: #000000;
+$blackA1		: rgba(0, 0, 0, 0.1);
+$blackA2		: rgba(0, 0, 0, 0.2);
+$blackA3		: rgba(0, 0, 0, 0.3);
+$blackA4		: rgba(0, 0, 0, 0.4);
+$blackA5		: rgba(0, 0, 0, 0.5);
+$blackA6		: rgba(0, 0, 0, 0.6);
+
+$navy			: rgba(34, 64, 103, 1);
+$navyA05		: rgba(34, 64, 103, 0.05);
+$navyA075		: rgba(34, 64, 103, 0.075);
+$navyA1			: rgba(34, 64, 103, 0.1);
+$navyA15		: rgba(34, 64, 103, 0.15);
+$navyA2			: rgba(34, 64, 103, 0.2);
+$navyA3			: rgba(34, 64, 103, 0.3);
+$navyA4			: rgba(34, 64, 103, 0.4);
+$navyA5			: rgba(34, 64, 103, 0.5);
+$navyA8			: rgba(34, 64, 103, 0.8);
+
+$red			: rgba(255, 82, 82, 1);
+$redA05			: rgba(255, 82, 82, 0.05);
+$redA15			: rgba(255, 82, 82, 0.15);
+$redA1			: rgba(255, 82, 82, 0.1);
+$redA8			: rgba(255, 82, 82, 0.8);
