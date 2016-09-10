@@ -4215,37 +4215,45 @@ header {
   padding-top: 0px;
   background: url("../data/images/uiuc/grainger.jpg") no-repeat center center fixed;
   background-size: cover; }
-  /* line 47, ../../source_sass/_base.scss */
+  @media screen and (max-width: 63.9375em) {
+    /* line 39, ../../source_sass/_base.scss */
+    header {
+      background: url("../data/images/uiuc/grainger_medium.jpg") no-repeat center center fixed; } }
+  @media screen and (max-width: 39.9375em) {
+    /* line 39, ../../source_sass/_base.scss */
+    header {
+      background: url("../data/images/uiuc/grainger_smaller.jpg") no-repeat center center fixed; } }
+  /* line 55, ../../source_sass/_base.scss */
   header h1 {
     font-size: 5rem;
     color: #FFFFFF;
     text-align: center;
     font-weight: bold; }
     @media screen and (max-width: 39.9375em) {
-      /* line 47, ../../source_sass/_base.scss */
+      /* line 55, ../../source_sass/_base.scss */
       header h1 {
         font-size: 3rem; } }
-  /* line 57, ../../source_sass/_base.scss */
+  /* line 65, ../../source_sass/_base.scss */
   header h2 {
     letter-spacing: 1px;
     color: #FFFFFF;
     font-size: 2rem;
     text-transform: none; }
     @media screen and (max-width: 39.9375em) {
-      /* line 57, ../../source_sass/_base.scss */
+      /* line 65, ../../source_sass/_base.scss */
       header h2 {
         font-size: 1.6rem; } }
 
-/* line 67, ../../source_sass/_base.scss */
+/* line 75, ../../source_sass/_base.scss */
 .divheader {
   height: 100vh;
   margin: 0px auto;
   background-color: rgba(0, 0, 0, 0.4); }
-  /* line 71, ../../source_sass/_base.scss */
+  /* line 79, ../../source_sass/_base.scss */
   .divheader hr {
     width: 60%; }
 
-/* line 76, ../../source_sass/_base.scss */
+/* line 84, ../../source_sass/_base.scss */
 .anchor {
   display: block;
   height: 48px;
@@ -4254,81 +4262,81 @@ header {
   /*same height as nav*/
   visibility: hidden; }
 
-/* line 83, ../../source_sass/_base.scss */
+/* line 91, ../../source_sass/_base.scss */
 .about {
   margin: auto;
   width: 60%; }
   @media screen and (max-width: 63.9375em) {
-    /* line 83, ../../source_sass/_base.scss */
+    /* line 91, ../../source_sass/_base.scss */
     .about {
       width: 80%; } }
   @media screen and (max-width: 39.9375em) {
-    /* line 83, ../../source_sass/_base.scss */
+    /* line 91, ../../source_sass/_base.scss */
     .about {
       width: 100%; } }
 
-/* line 94, ../../source_sass/_base.scss */
+/* line 102, ../../source_sass/_base.scss */
 .programs {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #FFFFFF; }
-  /* line 98, ../../source_sass/_base.scss */
+  /* line 106, ../../source_sass/_base.scss */
   .programs h2 {
     color: #FFFFFF; }
-  /* line 101, ../../source_sass/_base.scss */
+  /* line 109, ../../source_sass/_base.scss */
   .programs h1 {
     text-transform: none;
     font-weight: normal; }
 
-/* line 106, ../../source_sass/_base.scss */
+/* line 114, ../../source_sass/_base.scss */
 .programbox {
   font-weight: normal;
   padding: 50px 100px;
   color: #000000; }
   @media screen and (max-width: 63.9375em) {
-    /* line 106, ../../source_sass/_base.scss */
+    /* line 114, ../../source_sass/_base.scss */
     .programbox {
       padding: 50px 10px; } }
-  /* line 113, ../../source_sass/_base.scss */
+  /* line 121, ../../source_sass/_base.scss */
   .programbox:hover {
     font-weight: normal;
     color: #000000;
     opacity: 0.8; }
-    /* line 117, ../../source_sass/_base.scss */
+    /* line 125, ../../source_sass/_base.scss */
     .programbox:hover h4 {
       color: #224067; }
 
-/* line 123, ../../source_sass/_base.scss */
+/* line 131, ../../source_sass/_base.scss */
 .navy1 {
   background-color: rgba(34, 64, 103, 0.05); }
 
-/* line 126, ../../source_sass/_base.scss */
+/* line 134, ../../source_sass/_base.scss */
 .navy2 {
   background-color: rgba(34, 64, 103, 0.075); }
 
-/* line 130, ../../source_sass/_base.scss */
+/* line 138, ../../source_sass/_base.scss */
 .divmeet {
   background-color: #FFFFFF;
   padding: 60px 0px; }
-  /* line 133, ../../source_sass/_base.scss */
+  /* line 141, ../../source_sass/_base.scss */
   .divmeet h1 {
     text-transform: none;
     font-weight: normal; }
 
-/* line 139, ../../source_sass/_base.scss */
+/* line 147, ../../source_sass/_base.scss */
 ul {
   width: 80%;
   margin: auto; }
 
-/* line 145, ../../source_sass/_base.scss */
+/* line 153, ../../source_sass/_base.scss */
 section {
   margin: 20px; }
 
-/* line 149, ../../source_sass/_base.scss */
+/* line 157, ../../source_sass/_base.scss */
 table {
   margin: auto; }
 
-/* line 153, ../../source_sass/_base.scss */
+/* line 161, ../../source_sass/_base.scss */
 footer {
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
@@ -4341,37 +4349,37 @@ footer {
   letter-spacing: 1px;
   position: relative;
   bottom: 48px; }
-  /* line 166, ../../source_sass/_base.scss */
+  /* line 174, ../../source_sass/_base.scss */
   footer #footermain {
     margin: 0px auto;
     overflow: hidden;
     width: 700px; }
     @media screen and (max-width: 39.9375em) {
-      /* line 166, ../../source_sass/_base.scss */
+      /* line 174, ../../source_sass/_base.scss */
       footer #footermain {
         width: 100%; } }
-    /* line 173, ../../source_sass/_base.scss */
+    /* line 181, ../../source_sass/_base.scss */
     footer #footermain .phoneid a {
       font-weight: normal;
       color: #ff5252; }
-      /* line 176, ../../source_sass/_base.scss */
+      /* line 184, ../../source_sass/_base.scss */
       footer #footermain .phoneid a:hover {
         color: #FFFFFF; }
-    /* line 181, ../../source_sass/_base.scss */
+    /* line 189, ../../source_sass/_base.scss */
     footer #footermain h4 {
       color: #ff5252; }
 
-/* line 187, ../../source_sass/_base.scss */
+/* line 195, ../../source_sass/_base.scss */
 .rightbox, .leftbox {
   text-align: left;
   padding-bottom: 10px; }
 
-/* line 193, ../../source_sass/_base.scss */
+/* line 201, ../../source_sass/_base.scss */
 p {
   width: 90%;
   margin: 20px auto; }
 
-/* line 198, ../../source_sass/_base.scss */
+/* line 206, ../../source_sass/_base.scss */
 h1 {
   font-size: 3rem;
   color: #000000;
@@ -4381,7 +4389,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 2px; }
 
-/* line 208, ../../source_sass/_base.scss */
+/* line 216, ../../source_sass/_base.scss */
 h2 {
   color: #224067;
   font-size: 2.5rem;
@@ -4391,7 +4399,7 @@ h2 {
   margin: 10px;
   font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 219, ../../source_sass/_base.scss */
+/* line 227, ../../source_sass/_base.scss */
 h3 {
   color: #ff5252;
   font-size: 1.5rem;
@@ -4399,7 +4407,7 @@ h3 {
   line-height: 100%;
   font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 229, ../../source_sass/_base.scss */
+/* line 237, ../../source_sass/_base.scss */
 h4 {
   color: #ff5252;
   font-size: 1.2rem;
@@ -4409,16 +4417,16 @@ h4 {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 239, ../../source_sass/_base.scss */
+/* line 247, ../../source_sass/_base.scss */
 a, a:visited, a:active {
   transition: 0.2s;
   color: #ff5252;
   font-weight: normal; }
-  /* line 243, ../../source_sass/_base.scss */
+  /* line 251, ../../source_sass/_base.scss */
   a .programbox, a:visited .programbox, a:active .programbox {
     transition: 0.2s; }
 
-/* line 247, ../../source_sass/_base.scss */
+/* line 255, ../../source_sass/_base.scss */
 a:hover {
   font-weight: normal;
   color: #224067; }

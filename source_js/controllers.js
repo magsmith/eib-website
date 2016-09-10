@@ -1,10 +1,5 @@
 app.controller('homeController', ['$scope', '$http', function($scope, $http) {
 
-
-}]);
-
-app.controller('meetController', ['$scope', '$http', function($scope, $http) {
-
     $http.get('./data/members.json').success(function(data){
         $scope.members = data;
     }).error(function(err){

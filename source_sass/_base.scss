@@ -44,6 +44,14 @@ header {
 	background: url('../data/images/uiuc/grainger.jpg') no-repeat center center fixed;
 	background-size: cover;
 
+	@include breakpoint (medium down){
+		background: url('../data/images/uiuc/grainger_medium.jpg') no-repeat center center fixed;
+	}
+
+	@include breakpoint (small down){
+		background: url('../data/images/uiuc/grainger_smaller.jpg') no-repeat center center fixed;
+	}
+
 	h1 {
 		font-size: 5rem;
 		color: $white;
